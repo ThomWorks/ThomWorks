@@ -1,0 +1,149 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3d8143;
+}
+
+h2 {
+    color: #000000;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Asegura que el logo esté centrado verticalmente */
+    background-color: #ffffff57;
+    padding: 15px 30px;
+}
+
+.navbar .logo a img {
+    width: 200px; /* Ajusta el tamaño de la imagen para que encaje bien */
+    height: auto; /* Mantiene la proporción del logo */
+    max-width: 100%; /* Asegura que la imagen no se salga de su contenedor */
+    display: block; /* Elimina el espacio debajo de la imagen */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sección de Noticias */
+.noticias {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.noticia-item {
+    background-color: #ffffffc7;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.349);
+}
+
+.noticia-item a {
+    color: #3d8143;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* Sección de Galería */
+.gallery {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    margin: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+/* Sección de Cartelera Virtual */
+.cartelera {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cartelera-item {
+    margin-bottom: 20px;
+}
+
+/* Acordeón */
+.accordion {
+    background-color: #3d8143;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.accordion:hover {
+    background-color: #3d8143;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: #f4f4f4;
+    overflow: hidden;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.panel a {
+    color: #FF5733;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.panel a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #3d8143;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}

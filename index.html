@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduControl - Gestión Escolar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <!-- Reemplaza 'logo.png' con la ruta correcta de tu imagen -->
+                <a href="#"><img src="images/educontrollogo.png" alt="EduControl Logo"></a>
+            </div>
+            <ul>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#cartelera">Cartelera Virtual</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Noticias -->
+    <section id="noticias" class="noticias">
+        <h2>Noticias Recientes</h2>
+        <br>
+        <div class="noticia-item">
+            <h3>Nuevo calendario escolar</h3>
+            <p>Mira el calendario escolar ¡Recientemente Actualizado!</p>
+            <a href="#">Leer más</a>
+        </div>
+    </section>
+
+    <!-- Sección de Galería -->
+    <section id="galeria" class="gallery">
+        <div class="gallery-item">
+            <img src="images/foto1.jpg" alt="Imagen 1" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/foto2.jpg" alt="Imagen 2" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/foto3.jpg" alt="Imagen 3" onclick="openModal(this)">
+        </div>
+    </section>
+
+    <!-- Sección de Cartelera Virtual -->
+    <section id="cartelera" class="cartelera">
+        <h2>Cartelera Virtual</h2>
+        <div class="cartelera-item">
+            <button class="accordion">Informe de Rendimiento Académico</button>
+            <div class="panel">
+                <p>Consulta los informes de rendimiento académico de este trimestre. ¡No olvides revisarlos!</p>
+                <a href="#">Ver más detalles</a>
+            </div>
+        </div>
+        <div class="cartelera-item">
+            <button class="accordion">Nuevo Horario Escolar</button>
+            <div class="panel">
+                <p>El horario escolar ha sido actualizado. Asegúrate de conocer los nuevos horarios de clases.</p>
+                <a href="#">Ver más detalles</a>
+            </div>
+        </div>
+        <div class="cartelera-item">
+            <button class="accordion">Examen de Matemáticas</button>
+            <div class="panel">
+                <p>El examen de matemáticas será el próximo lunes. Prepárate con los recursos proporcionados.</p>
+                <a href="#">Ver más detalles</a>
+            </div>
+        </div>
+        <div class="cartelera-item">
+            <button class="accordion">Actividades Extracurriculares</button>
+            <div class="panel">
+                <p>Consulta las actividades extracurriculares disponibles para este semestre.</p>
+                <a href="#">Ver más detalles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 EduControl. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
